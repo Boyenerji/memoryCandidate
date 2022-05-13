@@ -84,7 +84,7 @@ const hotDog = new Symbols(randIcons(), randomInteger(1, 17), true),
       sun = new Symbols(randIcons(), randomInteger(1, 17), true);
 
 
-
+console.log(1+1);
 let arrSimvols = [hotDog, poganka, hallowen, home, znak, konfeta, sun];
 let arrNoShow = [];
 for (let a = 0; a < 6; a++) {
