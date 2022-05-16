@@ -80,6 +80,11 @@ p {
     border-radius: 7px;
 }
 
+
+.localStorage p {
+    margin: 1%;
+}
+
 #P_lastGame {
     margin-bottom: 10px;
 }

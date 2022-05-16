@@ -79,9 +79,9 @@ const hotDog = new Symbols(randIcons(), randomInteger(1, 17), true),
       poganka = new Symbols(randIcons(), randomInteger(1, 17), true),
       hallowen = new Symbols(randIcons(), randomInteger(1, 17), true),
       home = new Symbols(randIcons(), randomInteger(1, 17), true),
-      konfeta = new Symbols(randIcons(), randomInteger(1, 17), true),
-      znak = new Symbols(randIcons(), randomInteger(1, 17), true),
-      sun = new Symbols(randIcons(), randomInteger(1, 17), true);
+      konfeta = new Symbols(randIcons(), randomInteger(1, 15), true),
+      znak = new Symbols(randIcons(), randomInteger(1, 15), true),
+      sun = new Symbols(randIcons(), randomInteger(1, 15), true);
 
 
 
