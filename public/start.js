@@ -85,34 +85,32 @@ let arrIcons = [
 
 
 // let das = [
-//     fdas,
-//     dsa,
-//     ytr
+//     3,
+//     7,
+//     5
 // ];
+
+// console.log(das.sort(() => Math.random() - 0.5));
 
 
 // das.forEach(element => {
 //     bodyTest.innerHTML += `<button>${element}</button>`;
-
 // });
-
 
 // let popp = document.querySelectorAll('button');
 // for (i = 1; i < popp.length; i++) {
 //     console.log(i);
 //     console.log(popp[i]);
 //     popp[i].addEventListener('click', function(e) {
+//         console.dir(e.target.style.display);
 //         console.log(e.target.innerText);
-//         console.log(dfasd.one);
-//         if (e.target.innerText == dfasd.one) console.log('Равно 5');
+//         if (e.target.innerText == 3) console.log('равно 3 да');
 //   });
 // }
 // console.log(popp);
 
 
-// document.querySelector("#submit").onclick = function(e){
-//     console.log(e.target.innerText);
-// }
+
 
 
 
@@ -249,8 +247,47 @@ function test(num, numTwo) {
 
             input_gl.style.display = 'none';
             main3_out.remove();
-            dvig.innerHTML = `Все братик`;
-            sendData();
+
+            
+            let das = [
+                randomInteger(otvle4enieCounter + 1, otvle4enieCounter + 10),
+                otvle4enieCounter,
+                randomInteger(otvle4enieCounter + 1, otvle4enieCounter + 10),
+                randomInteger(otvle4enieCounter + 1, otvle4enieCounter + 10)
+            ];
+
+            das.sort(() => Math.random() - 0.5)
+            console.log(das);
+
+            counterHTML.remove();
+            dvig.innerHTML = '';
+            das.forEach(element => {
+                dvig.innerHTML += `<button>${element}</button>`;
+            });
+
+
+            let popp = document.querySelectorAll('button');
+            for (i = 0; i < popp.length; i++) {
+                console.log(i);
+                console.log(popp[i]);
+                popp[i].addEventListener('click', function(e) {
+                    console.log(e.target.innerText);
+                    console.log(popp[i]);
+                    if (e.target.innerText == otvle4enieCounter) {
+                        dvig.innerHTML = `Все правильно`;
+                        sendData();
+                    } else {
+
+                        e.target.style.display = 'none';
+                    }
+            });
+            }
+            console.log(popp);
+
+
+
+            // dvig.innerHTML = `Все братик - ${otvle4enieCounter}`;
+            // sendData();
             
         }
     } else {

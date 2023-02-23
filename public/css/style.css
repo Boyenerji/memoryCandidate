@@ -79,6 +79,10 @@ p {
     padding: 15px;
 }
 
+.bodyTest button {
+    padding: 10px;
+}
+
 
 .localStorage {
     /* display: flex;
